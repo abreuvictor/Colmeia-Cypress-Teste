@@ -2,8 +2,6 @@
 
 Suite de testes para o ambiente de QA da Colmeia (`teste-colmeia-qa.colmeia-corp.com`), construída em **Cypress** seguindo Page Object Model, fixtures, comandos customizados e isolamento entre testes.
 
-A suite cobre tanto **caminhos felizes** quanto **13 bugs reais identificados manualmente**, em forma de testes que documentam o comportamento esperado.
-
 ## Estrutura do Projeto
 
 ```
