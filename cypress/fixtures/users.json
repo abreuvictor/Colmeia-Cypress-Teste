@@ -1,0 +1,46 @@
+{
+  "valid": {
+    "email": "qa@test.com",
+    "password": "123456"
+  },
+  "invalid": {
+    "wrongEmail": {
+      "email": "naoexiste@test.com",
+      "password": "123456"
+    },
+    "wrongPassword": {
+      "email": "qa@test.com",
+      "password": "senhaErrada"
+    },
+    "bothWrong": {
+      "email": "errado@errado.com",
+      "password": "errada"
+    },
+    "malformedEmail": {
+      "email": "qa-test.com",
+      "password": "123456"
+    },
+    "emptyEmail": {
+      "email": "",
+      "password": "123456"
+    },
+    "emptyPassword": {
+      "email": "qa@test.com",
+      "password": ""
+    }
+  },
+  "security": {
+    "sqlInjection": {
+      "email": "' OR '1'='1",
+      "password": "' OR '1'='1"
+    },
+    "xss": {
+      "email": "<script>alert('xss')</script>@test.com",
+      "password": "<script>alert(1)</script>"
+    },
+    "longStrings": {
+      "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com",
+      "password": "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+    }
+  }
+}

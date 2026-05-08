@@ -1,0 +1,12 @@
+{
+  "validNames": [
+    "Banco Teste QA",
+    "Banco Cypress",
+    "Banco Validacao"
+  ],
+  "duplicateName": "Banco Duplicado QA",
+  "longName": "TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste",
+  "specialChars": "Teste@#$%^&*()",
+  "withTags": "<script>alert('xss')</script>",
+  "withSqlInjection": "Teste'; DROP TABLE users;--"
+}
