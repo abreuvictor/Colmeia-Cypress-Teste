@@ -9,7 +9,7 @@ import LoginPage from '../../support/pages/LoginPage'
  * automaticamente passa a passar quando o bug for corrigido.
  *
  */
-describe('Login - Cenários de sucesso (caminho feliz)', () => {
+describe('Login - Cenários de sucesso', () => {
   it('CT01 - Deve fazer login com credenciais válidas e ir direto para a área autenticada', () => {
     cy.fixture('users').then(({ valid }) => {
       LoginPage.visit().login(valid.email, valid.password)
